@@ -76,17 +76,17 @@ Follow the instructions below to download and use the project from this reposito
 
 Clone this repository using SSH:
 ```bash
-git clone git@github.com:danielhessell/feedget-web.git
+git clone git@github.com:danielhessell/feedback-widget.git
 ```
 
 or clone using https:
 ```bash
-git clone git@github.com:danielhessell/feedget-web.git
+git clone git@github.com:danielhessell/feedback-widget.git
 ```
 
 Go to project folder in terminal/cmd:
 ```bash
-cd feedget-web
+cd feedback-widget
 ```
 
 Install dependencies:
@@ -112,7 +112,7 @@ Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](https
 
 ## :page_facing_up: License
 
-This project is under the MIT license. See the [LICENSE](https://github.com/danielhessell/feedget-web/blob/master/LICENSE) file for more details.
+This project is under the MIT license. See the [LICENSE](https://github.com/danielhessell/feedback-widget/blob/master/LICENSE) file for more details.
 
 ---
 Made with :blue_heart: by Daniel Hessel.
