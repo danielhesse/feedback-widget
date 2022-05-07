@@ -5,6 +5,7 @@
 ![Badge](https://img.shields.io/static/v1?label=license&message=MIT&color=0070f3&style=flat&logo=<LOGO>)
 
 Feedback widget for collecting feedback on websites developed during Rocketseat's NLW Return using ReactJs, Vite and Tailwindcss.
+
 The project was also developed with accessibility in mind, and to make this work easier we used components from the headless ui that already has keyboard navigation ready.
 
 ## :pushpin: Table of contents
@@ -44,11 +45,9 @@ You can test the project at this url: [https://feedback-widget-alpha.vercel.app/
 
 #### :cloud: Cloud infrastructure
 
-- [Vercel](https://vercel.com/):
-   Vercel is a platform for frontend frameworks and static sites, built to integrate with your headless content, commerce, or database.
+- [Vercel](https://vercel.com/): Vercel is a platform for frontend frameworks and static sites, built to integrate with your headless content, commerce, or database.
 
-- [Railway](https://railway.app/):
-   The project's backend is deployed on Railway, a deployment infrastructure for any type of application as simple as vercel
+- [Railway](https://railway.app/): the project's backend is deployed on Railway, a deployment infrastructure for any type of application as simple as vercel.
 
 ## :computer: Getting started
 
@@ -63,12 +62,16 @@ Npm is distributed with Node.js which means that when you download Node.js, you 
 Yarn is a package manager created by the Facebook team and seems to be faster than npm in general.
 - [Yarn v1.22.18](https://yarnpkg.com/) or heigher.
 
-The project uses a database (Postgres), it is necessary to have it on your machine so that you can run it. If not, I suggest using Docker to run a container with the postgres image. [Click here to install Docker](https://docs.docker.com/engine/install/).
+The project uses a database (Postgres), it is necessary to have it on your machine so that you can run it. If not, I suggest using Docker to run a container with the postgres image.
+- [Docker](https://docs.docker.com/engine/install/)
 
-How I created my postgres container locally:
+<details>
+<summary>How I created my postgres container locally (linux)</summary>
+
 ```bash
 docker run --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
 ```
+</details>
 
 Also, it’s good to have an editor to work with the code like [VSCode](https://code.visualstudio.com/).
 
@@ -115,7 +118,7 @@ Run project:
 yarn dev
 ```
 
-The server will start on port 3333. Go to http://localhost:3333
+The server will start on port 3333. Go to http://localhost:3333.
 
 #### Frontend
 
@@ -134,7 +137,7 @@ Run project:
 yarn dev
 ```
 
-The server will start on port 3000. Go to http://localhost:3000
+The server will start on port 3000. Go to http://localhost:3000.
 
 ## :tada: How to contribute to the project
 
