@@ -1,4 +1,4 @@
-# Feedget Web
+# Feedback Widget
 
 ![Badge](https://img.shields.io/static/v1?label=author&message=DanielHessel&color=0070f3&style=flat&logo=<LOGO>)
 ![Badge](https://img.shields.io/static/v1?label=status&message=InProgress&color=yellow&style=flat&logo=<LOGO>)
@@ -40,14 +40,15 @@ This project was developed with the following technologies:
 
 ## :triangular_flag_on_post: Application demo
 
-You can test the project at this url: [http://localhost:3333](http://localhost:3333).
-As this is a backend application, you will need to use an http client like Insomnia or Postman to test the API calls
-Click here to get the Insomnia file and try it out.
+You can test the project at this url: [https://feedback-widget-alpha.vercel.app/](https://feedback-widget-alpha.vercel.app/).
 
 #### :cloud: Cloud infrastructure
 
-- [Github](https://github.com)
 - [Vercel](https://vercel.com/)
+   Vercel is a platform for frontend frameworks and static sites, built to integrate with your headless content, commerce, or database.
+
+- [Railway](https://railway.app/)
+   The project's backend is deployed on Railway, a deployment infrastructure for any type of application as simple as vercel
 
 ## :computer: Getting started
 
@@ -61,10 +62,6 @@ Npm is distributed with Node.js which means that when you download Node.js, you 
 
 Yarn is a package manager created by the Facebook team and seems to be faster than npm in general.
 - [Yarn v1.22.18](https://yarnpkg.com/) or heigher.
-
-<!-- As mentioned before, we are using Apache Kafka to handle the communication between the services and Postgres to the database, and the best way to run these environments locally is using Docker, for that you will need to have it installed on your machine. [Click here to install Docker](https://www.notion.so/Docker-e-Docker-Compose-16771f2ceefe4a05a8c29df4ca49e97a). -->
-
-<!-- The project can be built directly with the Docker and Docker Compose, where the server container will be created with all the necessary configurations to start the project. [Click here to install Docker and Docker Compose](https://www.notion.so/Docker-e-Docker-Compose-16771f2ceefe4a05a8c29df4ca49e97a). -->
 
 Also, it’s good to have an editor to work with the code like [VSCode](https://code.visualstudio.com/).
 
@@ -87,6 +84,32 @@ git clone git@github.com:danielhessell/feedback-widget.git
 Go to project folder in terminal/cmd:
 ```bash
 cd feedback-widget
+```
+
+#### Backend
+
+Go to server folder in terminal/cmd:
+```bash
+cd server
+```
+
+Install dependencies:
+```bash
+yarn
+```
+
+Run project:
+```bash
+yarn dev
+```
+
+The server will start on port 3333. Go to http://localhost:3333
+
+#### Frontend
+
+Go to web folder in terminal/cmd:
+```bash
+cd web
 ```
 
 Install dependencies:
@@ -116,5 +139,3 @@ This project is under the MIT license. See the [LICENSE](https://github.com/dani
 
 ---
 Made with :blue_heart: by Daniel Hessel.
-
-<!-- ![Badge](https://img.shields.io/static/v1?label=danielhessell&message=DOSOMETHINGGREAT&color=0070f3&style=<0070f3>&logo=rocket) -->
