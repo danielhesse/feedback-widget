@@ -1,7 +1,7 @@
 # Feedback Widget
 
 ![Badge](https://img.shields.io/static/v1?label=author&message=DanielHessel&color=0070f3&style=flat&logo=<LOGO>)
-![Badge](https://img.shields.io/static/v1?label=status&message=InProgress&color=yellow&style=flat&logo=<LOGO>)
+![Badge](https://img.shields.io/static/v1?label=status&message=Done&color=success&style=flat&logo=<LOGO>)
 ![Badge](https://img.shields.io/static/v1?label=license&message=MIT&color=0070f3&style=flat&logo=<LOGO>)
 
 Feedback widget for collecting feedback on websites developed during Rocketseat's NLW Return using ReactJs, Vite and Tailwindcss.
@@ -44,10 +44,10 @@ You can test the project at this url: [https://feedback-widget-alpha.vercel.app/
 
 #### :cloud: Cloud infrastructure
 
-- [Vercel](https://vercel.com/)
+- [Vercel](https://vercel.com/):
    Vercel is a platform for frontend frameworks and static sites, built to integrate with your headless content, commerce, or database.
 
-- [Railway](https://railway.app/)
+- [Railway](https://railway.app/):
    The project's backend is deployed on Railway, a deployment infrastructure for any type of application as simple as vercel
 
 ## :computer: Getting started
@@ -62,6 +62,13 @@ Npm is distributed with Node.js which means that when you download Node.js, you 
 
 Yarn is a package manager created by the Facebook team and seems to be faster than npm in general.
 - [Yarn v1.22.18](https://yarnpkg.com/) or heigher.
+
+The project uses a database (Postgres), it is necessary to have it on your machine so that you can run it. If not, I suggest using Docker to run a container with the postgres image. [Click here to install Docker](https://docs.docker.com/engine/install/).
+
+How I created my postgres container locally:
+```bash
+docker run --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
+```
 
 Also, it’s good to have an editor to work with the code like [VSCode](https://code.visualstudio.com/).
 
@@ -96,6 +103,11 @@ cd server
 Install dependencies:
 ```bash
 yarn
+```
+
+Run migrations
+```bash
+yarn prisma migrate dev
 ```
 
 Run project:
